@@ -53,14 +53,14 @@ export default function App() {
   <View style={{}}>
       <View 
       style={{position:'absolute',zIndex: 1,elevation: 3,top:0,bottom:0,left:0,right:0, 
-      flex:1,height:350,
+      flex:1,height:380,
     }}>
 
-      <Image style={[styles.img,{position:'absolute',top:0}]} source={{uri: 'https://image.freepik.com/free-vector/isometric-hiring-process_52683-44138.jpg'}} />
+      <Image style={[styles.img,{position:'absolute',top:0}]} source={require('./img/Chrysalidocarpus-lutescens-Areca-Palm.png')} />
 
       <View style={[styles.box,{position:'absolute',bottom:0}]}>
 
-      <Text style={{...padding(5, 10, 5, 10),textAlign:'center',fontWeight:'bold', fontSize:50,color:'#6C7741',flex:3}}>Areka</Text>
+      <Text style={{...padding(5, 10, 5, 10),textAlign:'center',fontWeight:'bold', fontSize:47,color:'#6C7741',flex:3}}>Areka</Text>
 
 
       <View style={{
@@ -78,13 +78,13 @@ export default function App() {
       <Text style={{ ...padding(0,10),fontSize:18,color:'#6C7741', fontStyle:'italic',textAlign:'center'}}>Areca - Chrysalidocarpus Lutescens</Text>
       </View>
 
-     <Image source={{uri:'https://picsum.photos/200/200'}} style={{   ...margin(5, 'auto', 3, 'auto'),flex:1,width:10,height:10}}></Image>
+     <Image source={require('./img/Icon_down.png')} style={{   ...margin(5, 'auto', 3, 'auto'),flex:1,width:20,height:10,resizeMode: 'contain'}}></Image>
       
       </View>
       </View>
 
 <ScrollView style={{}}>
-       <View style={[styles.container,{ flexGrow: 1, height:'100%',marginTop:350}]}> 
+       <View style={[styles.container,{ flexGrow: 1, height:'100%',marginTop:380}]}> 
      
      
 {/* button section */}
@@ -112,7 +112,7 @@ export default function App() {
 
 
     <View style={[styles.box,{position:'relative',backgroundColor:'#FFFFFF',width:'30%',height:'100%',borderRadius:14,}]}>
-    <Image source={{uri:'https://picsum.photos/200/200'}} style={{   ...margin(5, 'auto', 3, 'auto'),flex:2,width:'70%',maxHeight:'50%'}}></Image>
+    <Image source={require('./img/Icon_sun.png')} style={{...margin(5, 'auto', 3, 'auto'),flex:2,width:'70%',maxWidth:'100%',maxHeight:'40%',resizeMode: 'contain'}}></Image>
     
     <Text style={{...padding(5, 10, 5, 10),textAlign:'center',fontWeight:'bold', fontSize:12,color:'#6C7741',}}>STANOWISKO</Text>
 
@@ -132,8 +132,8 @@ export default function App() {
 
 
 <View style={[styles.box,{position:'relative',bottom:'auto',backgroundColor:'#FFFFFF',width:'30%',height:'100%',borderRadius:14,}]}>
-    <Image source={{uri:'https://picsum.photos/200/200'}} style={{   ...margin(5, 'auto', 3, 'auto'),flex:2,width:'70%',maxHeight:'50%'}}></Image>
-      
+    <Image source={require('./img/Icon_water.png')} style={{...margin(5, 'auto', 3, 'auto'),flex:2,width:'70%',maxWidth:'100%',maxHeight:'40%',resizeMode: 'contain'}}></Image>
+     
     <Text style={{...padding(5, 10, 5, 10),textAlign:'center',fontWeight:'bold', fontSize:12,color:'#6C7741'}}>PODLEWANIE</Text>
 
 <View style={{
@@ -150,20 +150,14 @@ export default function App() {
 </View>
 
   <View style={[styles.box,{position:'relative',bottom:'auto',backgroundColor:'#FFFFFF',width:'30%',height:'100%',borderRadius:14, }]}>
-  <Image source={{uri:'https://picsum.photos/200/200'}} style={{   ...margin(5, 'auto', 3, 'auto'),flex:2,width:'70%',maxHeight:'50%'}}></Image>
+  <Image source={require('./img/Icon_cat.png')} style={{...margin(5, 'auto', 3, 'auto'),flex:2,width:'70%',maxWidth:'100%',maxHeight:'40%',resizeMode: 'contain'}}></Image>
       
     <Text style={{...padding(5, 10, 5, 10),textAlign:'center',fontWeight:'bold', fontSize:12,color:'#6C7741'}}>BEZPIECZNE</Text>
 
-<View style={{
-    alignItems:'center',
-       justifyContent:'center',
-    borderRadius:32,  
-    alignSelf: "center",
-     shadowColor: '#202020',
-    shadowOffset: {width: 0, height: 0},
-    shadowRadius: 5,backgroundColor:'#E1EBB4', height:27,borderRadius:12, }}>
-<Text style={{ ...padding(0,10),fontSize:10,color:'#6C7741', fontWeight:'bold', textAlign:'center'}}>słoneczne</Text>
-    </View>
+
+  <Image source={require('./img/Icon_check.png')} style={{   ...margin(5, 'auto', 3, 'auto'),maxHeight:'10%',resizeMode: 'contain'}}></Image>
+      
+ 
 
 </View>
 </View>
@@ -185,7 +179,7 @@ export default function App() {
      shadowColor: '#202020',
     shadowOffset: {width: 0, height: 0},
     shadowRadius: 5,backgroundColor:'#E1EBB4', flex:3,borderRadius:12, }}>
-<Text style={{ ...padding(20,20),fontSize:18,color:'#6C7741',textAlign:'center'}}>Zaleca się podlewać 2-3 razy w tygodniu ble ble ble Zaleca się podlewać 2-3 razy w tygodniu ble ble ble Zaleca się podlewać 2-3 razy w tygodniu ble ble ble</Text>
+<Text style={{ ...padding(20,20),fontSize:18,color:'#6C7741',textAlign:'center'}}>Zaleca się podlewać 2-3 razy w tygodniu Podłoże w doniczce powinno być cały czas wilgotne. Aby zachować dobrą formę palmy, zaleca się stosowanie nawozu raz w miesiącu, w okresie letnim.</Text>
 </View>
 
 </View>  
@@ -402,28 +396,12 @@ DD-MM-YYYY
 </View>
 <View style={{alignItems:'center',width:'100%'}}>
 <View style={{ flexDirection:'row', flexWrap:'wrap',justifyContent:'center',alignContent:'center'}}>
-<Image source={{uri:'https://picsum.photos/400/400'}} style={styles.galleryImage}></Image>
-<Image source={{uri:'https://picsum.photos/300/300'}} style={styles.galleryImage}></Image>
-<Image source={{uri:'https://picsum.photos/200/200'}} style={styles.galleryImage}></Image>
-<Image source={{uri:'https://picsum.photos/200/200'}} style={styles.galleryImage}></Image>   
+<Image source={require('./img/Areca1.jpg')}  style={styles.galleryImage}></Image>
+<Image source={require('./img/Areca3.png')} style={styles.galleryImage}></Image>
+<Image source={require('./img/Areca4.png')}  style={styles.galleryImage}></Image>
+<Image source={require('./img/Areca2.jpg')}  style={styles.galleryImage}></Image>   
 </View>
 </View>
-
-  <View style={{ flex: 1,
-    alignItems: "center",
-    justifyContent: "center"}}>
-      <View style={{    flexDirection: "row",
-    marginBottom: 20,}}>
-       <CheckBox
-    disabled={false}
-    value={toggleCheckBox}
-    onValueChange={(newValue) => setToggleCheckBox(newValue)}
-  />
- 
-        <Text style={{ alignSelf: "center"}}>Do you like React Native?</Text>
-      </View>
-   
-    </View>
 
 
 
